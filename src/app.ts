@@ -1,7 +1,7 @@
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import express, { Application, Request, Response } from "express";
-import { envVars } from "./app/config/env";
+// import { envVars } from "./app/config/env";
 
 const app: Application = express();
 
@@ -13,8 +13,8 @@ app.use(cookieParser());
 // CORS
 app.use(cors({
     origin: [
-        envVars.FRONTEND_URL,
-        envVars.BETTER_AUTH_URL,
+        // envVars.FRONTEND_URL,
+        // envVars.BETTER_AUTH_URL,
         "http://localhost:3000",
         "http://localhost:5000"
     ],
